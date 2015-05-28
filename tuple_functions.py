@@ -16,3 +16,17 @@ def TVCKWA (a_tup=(2,3,4,5), an_int=6) :
 def print_tuple( tup = (1,2,3) ) :
     '''prints a tuple, no return value '''
     return tup
+
+'''
+define a new function that takes in any number of touples, find the length of each of those tuples, and returns a list of lengths
+'''
+'''returns the length of tuples that have been input. Find out how to do arbitrary number of inputs in a function(ie (1,2,3),(5,6),(1,10,100,1000))>> [3,2,4]'''
+def ftL (*tuples) :
+    list_of_len = []
+    print tuples
+    #iterating over each item in tuples
+    for tup in tuples : 
+        print tup
+        print len(tup)
+        list_of_len.append(len(tup))
+    return list_of_len
